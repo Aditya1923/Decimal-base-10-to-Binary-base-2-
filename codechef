@@ -1,0 +1,16 @@
+import java.util.*;
+public class Decimal_to_Binary{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int n,r,i;
+String d="";
+System.out.println("Enter a decimal number");
+n=sc.nextint();
+while(n>0){
+r=n%2;
+d=Integer.toString(r)+d;
+n=n/2;
+}
+System.out.println(d);
+}
+}
